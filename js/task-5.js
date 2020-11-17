@@ -1,10 +1,9 @@
-const input = document.querySelector("#name-input");
-const output = document.querySelector("#name-output");
+const input = document.querySelector('#name-input');
+const output = document.querySelector('#name-output');
 
-input.addEventListener("input", outputChage);
+input.addEventListener('input', outputChage);
 
 function outputChage(event) {
-  input.value === ""
-    ? (output.textContent = "незнакомец")
-    : (output.textContent = event.currentTarget.value);
+  output.textContent =
+    input.value === '' ? 'незнакомец' : event.currentTarget.value;
 }
